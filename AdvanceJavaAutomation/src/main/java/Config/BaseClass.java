@@ -55,8 +55,8 @@ public class BaseClass {
 	public void beforeClass() throws IOException {
 
 		// BROWSER=browser; parallel cross browsing
-		//String BROWSER = plib.toReadDataFromProperiesFile("browser");
-		Object BROWSER = System.getProperty("browser");//reading browser from command prompt
+		String BROWSER = plib.toReadDataFromProperiesFile("browser");
+		//Object BROWSER = System.getProperty("browser");//reading browser from command prompt
 		
 		if (BROWSER.equals("edge")) {
 			driver = new EdgeDriver();
